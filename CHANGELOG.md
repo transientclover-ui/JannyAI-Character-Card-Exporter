@@ -1,3 +1,11 @@
+# v0.5.6-beta
+
+- Add a Linux Chrome/Chromium MV3 Native Messaging companion that reuses the existing local ClamAV host and the same default-off exporter toggle.
+- Add browser-specific Chrome and Chromium registration through an extension-origin allow-listed Native Messaging manifest.
+- Add Chromium companion and installer regression coverage, plus a successful headless Chromium MV3 extension load check.
+- Retain the Firefox companion and its browser-specific registration path unchanged.
+- Document actual browser/platform test scope; Windows and macOS remain untested.
+
 # v0.5.5-beta
 
 - Replace the manual loopback helper/token workflow with an automatic Firefox Native Messaging companion.

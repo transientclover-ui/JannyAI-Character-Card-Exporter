@@ -4,7 +4,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
 const zlib = require('node:zlib');
-const filename = path.join(__dirname, '../JannyAI-Character-Card-Exporter-v0.5.5-beta.user.js');
+const filename = path.join(__dirname, '../JannyAI-Character-Card-Exporter-v0.5.6-beta.user.js');
 const source = fs.readFileSync(filename, 'utf8');
 const footer = '  install(); new MutationObserver(install).observe(document.documentElement, { childList: true, subtree: true });';
 assert(source.includes(footer));

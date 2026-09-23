@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         JannyAI Character Card Exporter
 // @namespace    https://github.com/transientclover-ui
-// @version      0.5.5-beta
+// @version      0.5.6-beta
 // @description  Export JannyAI character text as portable CCv2 JSON or a portrait-backed PNG card, with integrity checks.
 // @author       transientclover
 // @license      MIT
@@ -33,7 +33,7 @@ SOFTWARE.
 
 (() => {
   'use strict';
-  const VERSION = '0.5.5-beta';
+  const VERSION = '0.5.6-beta';
   const MAX_BYTES = 12 * 1024 * 1024;
   const MAX_PIXELS = 16_000_000;
   const MAX_DIM = 4096;

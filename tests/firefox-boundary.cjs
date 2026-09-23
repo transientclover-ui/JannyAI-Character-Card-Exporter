@@ -32,7 +32,7 @@ async function run(source) {
   assert.equal(a.parsePNG(a.embedAndVerify(clean,card)).card,JSON.stringify(card));
 }
 (async()=>{
- const source=fs.readFileSync(path.join(__dirname,'../JannyAI-Character-Card-Exporter-v0.5.5-beta.user.js'),'utf8');
+ const source=fs.readFileSync(path.join(__dirname,'../JannyAI-Character-Card-Exporter-v0.5.6-beta.user.js'),'utf8');
  // Remove each fix separately: both regression controls must fail.
  await assert.rejects(()=>run(source.replace('localBytes(encoder.encode(s))','encoder.encode(s)')),/Permission denied/);
  await assert.rejects(()=>run(source.replace('localBytes(new Uint8Array(await blob.arrayBuffer()))','new Uint8Array(await blob.arrayBuffer())')),/Permission denied/);

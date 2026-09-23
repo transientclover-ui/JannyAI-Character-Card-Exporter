@@ -24,6 +24,6 @@ The userscript/content-script bridge uses same-origin page messages because user
 
 ## Firefox signing
 
-Firefox Release requires a signed XPI for permanent installation. The `JannyAI-ClamAV-Companion-v0.5.5.xpi` included in this beta is intentionally unsigned and is for review with Firefox Nightly/Developer Edition’s temporary add-on workflow only. It is **not** a permanently installable production release. A production release needs the same reviewed extension submitted for Mozilla signing (an unlisted signed distribution is sufficient); the native host remains entirely local.
+Firefox Release requires a signed XPI for permanent installation. The `JannyAI-ClamAV-Companion-v0.5.6.xpi` included in this beta is intentionally unsigned and is for review with Firefox Nightly/Developer Edition’s temporary add-on workflow only. It is **not** a permanently installable production release. A production release needs the same reviewed extension submitted for Mozilla signing (an unlisted signed distribution is sufficient); the native host remains entirely local.
 
 This release environment did not have Firefox, Firefox Nightly, or Tampermonkey installed. Native-host registration and browser-extension installation have not been tested; only the host protocol and live local `clamscan` execution were tested on Linux.

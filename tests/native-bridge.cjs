@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
-const source = fs.readFileSync(path.join(__dirname, '../JannyAI-Character-Card-Exporter-v0.5.5-beta.user.js'), 'utf8');
+const source = fs.readFileSync(path.join(__dirname, '../JannyAI-Character-Card-Exporter-v0.5.6-beta.user.js'), 'utf8');
 const footer = '  install(); new MutationObserver(install).observe(document.documentElement, { childList: true, subtree: true });';
 
 function scanWith(result) {

@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict'),zlib=require('node:zlib');
 const showdown=require('showdown');
-const source=fs.readFileSync(path.join(__dirname,'../JannyAI-Character-Card-Exporter-v0.5.5-beta.user.js'),'utf8');
+const source=fs.readFileSync(path.join(__dirname,'../JannyAI-Character-Card-Exporter-v0.5.6-beta.user.js'),'utf8');
 const footer='  install(); new MutationObserver(install).observe(document.documentElement, { childList: true, subtree: true });';
 const sandbox={TextEncoder,TextDecoder,Uint8Array,btoa,atob,location:{href:'https://jannyai.com/',pathname:''},document:{querySelectorAll:()=>[]}};
 vm.runInNewContext(source.replace(footer,'globalThis.api={normalizeFormatting,decodeAstroProps,structuredRecord,cardV2,embedAndVerify,parsePNG,concat,chunk,SIG,put32};'),sandbox);

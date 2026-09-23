@@ -1,12 +1,12 @@
-# JannyAI Character Card Exporter v0.5.5-beta
+# JannyAI Character Card Exporter v0.5.6-beta
 
-Install `JannyAI-Character-Card-Exporter-v0.5.5-beta.user.js` in Tampermonkey in place of a previous exporter version, then reload the character page. Run only one exporter version.
+Install `JannyAI-Character-Card-Exporter-v0.5.6-beta.user.js` in Tampermonkey in place of a previous exporter version, then reload the character page. Run only one exporter version.
 
 ## Optional local ClamAV scanning
 
 Scanning is disabled by default. The exporter can scan CCv2 JSON, PNG cards, and raw JSON backups before downloading them when **Scan exports locally with ClamAV before downloading** is enabled.
 
-After the one-time Firefox Companion installation, ordinary use is simply: enable scanning, export, and download after a clean result. Firefox starts the Native Messaging host automatically for each opted-in scan; there is no terminal launch, local web service, token, or recurring setup. See [NATIVE-COMPANION.md](NATIVE-COMPANION.md) for installation, signing, and security details.
+After one-time companion installation, ordinary use is simply: enable scanning, export, and download after a clean result. Firefox, Chrome, and Chromium start the Native Messaging host automatically for each opted-in scan; there is no terminal launch, local web service, token, or recurring setup. See [NATIVE-COMPANION.md](NATIVE-COMPANION.md) for Firefox and [CHROMIUM-COMPANION.md](CHROMIUM-COMPANION.md) for Linux Chrome/Chromium registration and testing limits.
 
 Results are explicit: **Not scanned**, **No known threats detected**, **Threat detected**, or **Scanning failed**. An unavailable companion, timeout, protocol error, missing ClamAV, or ClamAV failure never produces a clean result and prevents that export attempt from downloading. Users who do not install the companion or ClamAV can leave scanning off and continue exporting normally.
 
@@ -15,7 +15,8 @@ Results are explicit: **Not scanned**, **No known threats detected**, **Threat d
 | Platform | Status |
 |---|---|
 | Omarchy Linux 7.2.3-zen1-3-zen, Node.js 26.8.2, Python 3.14.7, ClamAV 1.5.4 | Automated source, extraction, formatting, Native Messaging protocol, and live `clamscan` clean/EICAR tests passed. |
-| Firefox, Firefox Nightly, and Tampermonkey | Not installed or tested in this release environment. The Firefox-specific tests are simulations, not browser-extension tests. |
+| Chromium 152.0.7977.82 on Linux | The MV3 companion loaded in a headless browser session. Its manifest and Chrome/Chromium installer are covered by automated tests. No live JannyAI/Tampermonkey export or Chromium native-host registration was tested. |
+| Google Chrome, Firefox, Firefox Nightly, and Tampermonkey | Not installed or tested in this release environment. Firefox-specific tests are simulations, not browser-extension tests. |
 | Windows and macOS | Not tested. |
 | Firefox Native Messaging host registration and signed companion XPI | Not tested. The bundled companion XPI is unsigned and is **not** a permanently installable Firefox Release artifact. |
 

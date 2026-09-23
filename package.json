@@ -1,9 +1,9 @@
 {
   "name": "jannyai-exporter-tests",
-  "version": "0.5.5-beta",
+  "version": "0.5.6-beta",
   "private": true,
   "scripts": {
-    "test": "node tests/round-trip.cjs && node tests/firefox-boundary.cjs && node tests/formatting.cjs && node tests/native-bridge.cjs && node tests/native-host.cjs"
+    "test": "node tests/round-trip.cjs && node tests/firefox-boundary.cjs && node tests/formatting.cjs && node tests/native-bridge.cjs && node tests/native-host.cjs && node tests/chromium-companion.cjs"
   },
   "devDependencies": {
     "showdown": "2.1.0"

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "renderer": "Showdown 2.1.0 with SillyTavern core options; no app extensions",
+  "nickBefore": "<h2 id=\"youlaughhedoesnt\">You laugh. He doesn’t.</h2>",
+  "nickAfter": "<p>You laugh. He doesn’t.</p>",
+  "formerHeadings": [
+    "You laugh. He doesn’t.",
+    "The realization hits like a sniper round: He’s not joking.",
+    "You hold him until his systems reset."
+  ],
+  "checks": [
+    "normalization default on",
+    "all five exported text fields",
+    "original record and source props unchanged",
+    "JSON/PNG match for both modes",
+    "fences and indented code unchanged",
+    "punctuation and emphasis unchanged",
+    "line endings and existing paragraph breaks retained",
+    "idempotent"
+  ]
+}

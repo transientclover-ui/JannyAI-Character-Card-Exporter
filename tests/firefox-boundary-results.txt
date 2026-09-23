@@ -1,0 +1,1 @@
+PASS: both unpatched boundary controls fail; patched encoding and mocked canvas metadata round-trip pass. Live Firefox/Tampermonkey not tested.

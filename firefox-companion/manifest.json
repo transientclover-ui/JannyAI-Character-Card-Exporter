@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "JannyAI ClamAV Companion",
+  "version": "0.5.5",
+  "description": "Runs opted-in JannyAI exporter scans through local ClamAV Native Messaging.",
+  "permissions": [
+    "nativeMessaging",
+    "https://jannyai.com/characters/*",
+    "https://www.jannyai.com/characters/*"
+  ],
+  "applications": {
+    "gecko": {
+      "id": "jannyai-clamav-scanner@transientclover.github.io",
+      "strict_min_version": "109.0"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://jannyai.com/characters/*",
+        "https://www.jannyai.com/characters/*"
+      ],
+      "js": ["bridge.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}

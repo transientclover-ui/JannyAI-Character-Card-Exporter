@@ -1,0 +1,24 @@
+{
+  "origin": "http://127.0.0.1:8765",
+  "extraction": "astro-island props",
+  "preservedFields": true,
+  "htmlIntroPreserved": true,
+  "anonymousImage": {
+    "width": 640,
+    "height": 360
+  },
+  "pixelRead": "passed",
+  "anonymousCanvasPNG": {
+    "bytes": 311749,
+    "type": "image/png"
+  },
+  "nativeFetchBytes": 18338,
+  "png": {
+    "bytes": 366732,
+    "width": 640,
+    "height": 360,
+    "exactJSON": true,
+    "firstChunk": "IHDR"
+  },
+  "status": "passed"
+}

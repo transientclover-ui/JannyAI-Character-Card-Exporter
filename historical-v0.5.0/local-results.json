@@ -1,0 +1,18 @@
+{
+  "passed": 13,
+  "tests": [
+    "Astro recursive primitive/object/array decode is lossless",
+    "Definition and HTML intro remain distinct; whitespace, Unicode and marker-like text unchanged",
+    "All source fields and exact serialized props retained in CCv2",
+    "Malformed and unsupported Astro values reject instead of being silently dropped",
+    "Null source field is preserved with an explicit warning; missing and wrong UUID reject",
+    "PNG round-trip restores byte-exact card JSON, including Unicode and whitespace",
+    "Actual Nick Valentine props decode and all 18 character fields survive JSON/PNG export",
+    "Independent PNG reader validates chunk order, CRCs, chara, image bytes and dimensions",
+    "Corrupt CRC, metadata before IHDR, duplicate chara and truncated PNG reject",
+    "Legacy hidden-text fallback still works and reports structured failure",
+    "Native fetch reads bounded streamed bytes",
+    "HTTP failure, ambiguous network/CORS failure, empty and oversized responses reject accurately",
+    "No privileged image request or cross-origin grant remains"
+  ]
+}

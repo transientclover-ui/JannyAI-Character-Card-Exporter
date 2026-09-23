@@ -1,0 +1,11 @@
+{
+  "name": "jannyai-exporter-tests",
+  "version": "0.5.5-beta",
+  "private": true,
+  "scripts": {
+    "test": "node tests/round-trip.cjs && node tests/firefox-boundary.cjs && node tests/formatting.cjs && node tests/native-bridge.cjs && node tests/native-host.cjs"
+  },
+  "devDependencies": {
+    "showdown": "2.1.0"
+  }
+}
